@@ -1,26 +1,30 @@
-<html lang="pl">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Wyszukiwarka Krajow</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Tablica kanban</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div>
-        <h1>Country search engine</h1>
-        <button id="search">Search a country</button>
-        <input id="country-name" type="text" />
-        <h2>List of countries</h2>
-        <ul id="countries">
-            <li>No data</li>
-        </ul>
+
+    <div id="board" class="board">
+        <h1>Tablica kanban</h1>
+        <button class="create-column">Dodaj kolumnę</button>
+        <div class="column-container"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
+    <script type="text/javascript" src="js/column.js"></script>
+    <script type="text/javascript" src="js/card.js"></script>
+    <script type="text/javascript" src="js/board.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
